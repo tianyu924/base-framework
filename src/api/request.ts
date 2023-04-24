@@ -6,7 +6,7 @@ import { ElMessage } from 'element-plus'
 let isTipLoading = false // 是否提示中,防止出现多个提示框
 
 const service = axios.create({
-  baseURL: `${import.meta.env.VITE_BASE_URL}${import.meta.env.VITE_BASE_API_PREFIX}`,
+  baseURL: `${import.meta.env.VITE_BASE_URL}${import.meta.env.VITE_PROXY_PREFIX}`,
   timeout: 30000,
   method: 'GET'
 })

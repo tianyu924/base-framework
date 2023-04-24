@@ -27,10 +27,10 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       proxy: {
-        '/api': {
+        [env.VITE_PROXY_PREFIX]: {
           target: env.VITE_PROXY_BASE_URL,
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, '')
+          rewrite: (path) => path.replace(env.VITE_PROXY_PREFIX, '')
         }
       }
     }
