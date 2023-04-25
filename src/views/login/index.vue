@@ -30,6 +30,7 @@
         </el-button>
       </el-form-item>
     </el-form>
+    <Example />
   </div>
 </template>
 
