@@ -1,5 +1,5 @@
 /**
- * 刷新页面时，保持vuex中得缓存数据状态不丢失
+ * 刷新页面时，保持vuex缓存数据状态不丢失
  */
 import { useStore } from '@/store'
 import { onBeforeMount } from 'vue'

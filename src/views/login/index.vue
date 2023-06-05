@@ -37,8 +37,8 @@
 <script lang="ts" setup>
 import { reactive } from 'vue'
 import type { ILoginUser } from '@/types/user'
-import api from '@/api'
 import { useStore } from '@/store'
+import { loginApi } from '@/api/modules/common'
 
 const store = useStore()
 console.log(store)
@@ -49,7 +49,7 @@ const loginForm = reactive<ILoginUser>({
 
 const login = async () => {
   try {
-    const data = await api.common.loginApi(loginForm)
+    const data = await loginApi(loginForm)
     console.log('data', data)
   } catch (error) {
     console.log('error', error)

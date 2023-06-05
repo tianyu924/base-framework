@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import '@/styles/index.scss'
+import '@/styles/common.scss'
 
 import ElementPlus from '@/plugins/element-plus'
 import GlobalComponents from '@/components'
