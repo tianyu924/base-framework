@@ -17,7 +17,7 @@ export const enum RESPONSE_CODE {
 }
 
 // 业务错误代码统一处理配置，如token失效，跳转404页面等
-export const UNITY_RESPONSE_HANDLE: Record<string, any> = {
+export const UNITY_RESPONSE_HANDLE: Record<string, () => void> = {
   40003: () => {
     console.log('跳转登录')
   }
